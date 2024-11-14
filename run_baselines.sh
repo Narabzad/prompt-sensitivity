@@ -18,4 +18,4 @@ python baselines/specifity-based_QPP/specifity-based_QPP_baseline_results_script
 echo "Running supervised QPP baselines..."
 python baselines/supervised_QPP/supervised_QPP_baseline_results_script.py
 
-echo "All baseline evaluations completed. Results stored in results/"
+echo "All baseline evaluations completed. Results stored in baselines/*/results/"
