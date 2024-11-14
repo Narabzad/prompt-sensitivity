@@ -41,12 +41,32 @@ Each entry in the JSONL files contains:
 }
 ```
 
-## Generating Prompt Variations
+## Setup and Installation
 
 ### Requirements
-- Python 3.9+
-- Ollama
-- Required Python packages (specified in requirements.txt)
+```bash
+pip install -r requirements.txt
+```
+
+### Downloading Required Files
+
+#### Source Datasets
+To download the TriviaQA and HotpotQA datasets:
+```bash
+chmod +x download_triviaqa_and_hotpotqa_datasets.sh
+./download_triviaqa_and_hotpotqa_datasets.sh
+```
+This script will download the necessary dataset files to the `collection/` directory.
+
+#### Pre-trained Models
+To download the pre-trained baseline models:
+```bash
+chmod +x download_pre-trained_baseline_models.sh
+./download_pre-trained_baseline_models.sh
+```
+This script will download and extract the pre-trained models.
+
+## Generating Prompt Variations
 
 ### Process
 1. Data extraction from HotpotQA/TriviaQA
@@ -79,6 +99,7 @@ To generate prompt variations, run:
 3. **Text Classification**
 - BERT-based classification model for predicting prompt effectiveness
 - Implementation in `baselines/text_classification/binary_text_classification_train.py` and `baselines/text_classification/binary_text_classification_eval.py`
+- Pre-trained models available via download script
 
 To run all baselines:
 ```bash
@@ -97,6 +118,26 @@ To run all baselines:
    - Specificity-based QPP methods show relatively weak performance on both datasets
    - BERT-PE demonstrates competitive performance, particularly on HotpotQA
    - LLM self-evaluation shows reasonable performance on TriviaQA but lacks consistency on HotpotQA
+
+## Directory Structure
+```
+.
+├── baselines/
+│   ├── text_classification/
+│   ├── specifity-based_QPP/
+│   └── supervised_QPP/
+├── collection/
+├── prompt_set/
+│   ├── triviaqa/
+│   └── hotpotqa/
+├── runs/
+├── requirements.txt
+├── download_triviaqa_and_hotpotqa_datasets.sh
+├── download_pre-trained_baseline_models.sh
+├── generate_variations.sh
+├── run_baselines.sh
+└── README.md
+```
 
 ## License
 
