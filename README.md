@@ -124,13 +124,17 @@ To run all baselines:
 .
 ├── baselines/
 │   ├── text_classification/
+│   │   └── results/
 │   ├── specifity-based_QPP/
+│   │   └── results/
 │   └── supervised_QPP/
+│       └── results/
 ├── collection/
 ├── prompt_set/
 │   ├── triviaqa/
 │   └── hotpotqa/
 ├── runs/
+│   └── generated_datasets/
 ├── requirements.txt
 ├── download_triviaqa_and_hotpotqa_datasets.sh
 ├── download_pre-trained_baseline_models.sh
