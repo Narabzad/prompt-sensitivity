@@ -144,6 +144,32 @@ To run all baselines:
 ```
 
 ## License
+This project is licensed under the MIT License.
 
-
-## Contact
+## Citation
+```
+@InProceedings{10.1007/978-3-031-88714-7_29,
+author="Razavi, Amirhossein
+and Soltangheis, Mina
+and Arabzadeh, Negar
+and Salamat, Sara
+and Zihayat, Morteza
+and Bagheri, Ebrahim",
+editor="Hauff, Claudia
+and Macdonald, Craig
+and Jannach, Dietmar
+and Kazai, Gabriella
+and Nardini, Franco Maria
+and Pinelli, Fabio
+and Silvestri, Fabrizio
+and Tonellotto, Nicola",
+title="Benchmarking Prompt Sensitivity in Large Language Models",
+booktitle="Advances in Information Retrieval",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="303--313",
+abstract="Large language Models (LLMs) are highly sensitive to variations in prompt formulation, which can significantly impact their ability to generate accurate responses. In this paper, we introduce a new task, Prompt Sensitivity Prediction, and a dataset PromptSET designed to investigate the effects of slight prompt variations on LLM performance. Using TriviaQA and HotpotQA datasets as the foundation of our work, we generate prompt variations and evaluate their effectiveness across multiple LLMs. We benchmark the prompt sensitivity prediction task employing state-of-the-art methods from related tasks, including LLM-based self-evaluation, text classification, and query performance prediction techniques. Our findings reveal that existing methods struggle to effectively address prompt sensitivity prediction, underscoring the need to understand how information needs should be phrased for accurate LLM responses.",
+isbn="978-3-031-88714-7"
+}
+```
